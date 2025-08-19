@@ -39,28 +39,51 @@ function PortfolioSite() {
   // Editable profile info
   const PROFILE = {
     name: "Md Shahrar Fatemi",
-    role: "PhD Student · Medical NLP, Causal Learning with AI",
+    role: "PhD Student · Stony Brook University",
     location: "New York, USA",
-    bio: "Short bio: what you do, your research/industry focus, and what you're looking for.",
-    email: "shahrar007@gmail.com",
+    bio: "I am a PhD student working on automatic medical coding, focusing on bridging the gap between AI-driven and manual methods through a human-in-the-loop framework. I am also open to research collaborations and internship opportunities.",
+    email: "mfatemi[at]cs[dot]stonybrook[dot]edu",
     links: {
       github: "https://github.com/shahrarfatemi/",
       linkedin: "https://www.linkedin.com/in/md-shahrar-fatemi-9b7977141/",
       website: "https://shahrarfatemi.github.io/",
       cv: "https://drive.google.com/file/d/1v6gq4NWZl-scfCHZpw_FikVEMSif7z4Q/view", // link to a hosted PDF resume/CV
     },
-    skills: [
-      "Machine Learning",
-      "Time Series",
+    interests: [
+      "Medical AI",
       "NLP",
-      "PyTorch",
-      "React",
-      "Statistics",
-      "Signal Processing",
+      "Machine Learning",
+      "RAG",
+      "Knowledge Graphs"
     ],
   };
 
-  const PROJECTS = [
+  const RESEARCH_PROJECTS = [
+    {
+      title: "Concept-Enhanced ICD Coding with Large Language Models",
+      description:
+        "Developed a novel framework for automatic ICD coding by integrating concept-level predictions with hierarchical ICD code structures. Leveraged Large Language Models (LLMs) to generate and utilize medical concept sets for enhanced interpretability and accuracy.",
+      tags: ["Retrieval", "Concept Bottleneck Models", "LLMs", "Longformer", "In Context Learning"],
+      link: "#",
+    },
+    {
+      title: "Causal Discovery from unified Knowledge Graphs",
+      description:
+        "A framework that integrates multiple knowledge graphs into a unified representation and applies causal inference techniques to uncover cause–effect relationships among entities.",
+      tags: ["Prompt Engineering", "LLM Agents", "Causal Discovery"],
+      link: "#",
+    },
+    
+  ];
+
+  const SOFTWARE_PROJECTS = [
+    {
+      title: "Concept-Enhanced ICD Coding with Large Language Models",
+      description:
+        "Developed a novel framework for automatic ICD coding by integrating concept-level predictions with hierarchical ICD code structures. Leveraged Large Language Models (LLMs) to generate and utilize medical concept sets for enhanced interpretability and accuracy.",
+      tags: ["Retrieval", "Concept Bottleneck Models", "LLMs", "Longformer", "In Context Learning"],
+      link: "#",
+    },
     {
       title: "LiftSafe: Wearable-based Failure Detection",
       description:
@@ -68,29 +91,24 @@ function PortfolioSite() {
       tags: ["IMU", "Forecasting", "React", "Python"],
       link: "#",
     },
-    {
-      title: "Clinical Coding Assistant",
-      description:
-        "Dual-encoder + cross-encoder hybrid for large ontology retrieval (ICD).",
-      tags: ["Retrieval", "Contrastive Learning", "Longformer"],
-      link: "#",
-    },
+    
   ];
 
   const PUBLICATIONS = [
+    
     {
       title:
-        "Utilizing a Single Wearable Sensor for Indicating Muscle Failure during Strength Training",
-      venue: "Journal / Conference · 2025",
-      authors: "Your Name*, Coauthor, Advisor",
-      link: "#",
+        "Shonglap: A Large Bengali Open-Domain Dialogue Corpus",
+      venue: "LREC - 2022",
+      authors: "Syed Mostofa Monsur, Sakib Chowdhury, Md Shahrar Fatemi, Shafayat Ahmed",
+      link: "https://aclanthology.org/2022.lrec-1.623.pdf",
     },
     {
       title:
-        "Gene Tree Parsimony in the Presence of Gene Duplication, Loss, and ILS",
-      venue: "Venue · 2024",
-      authors: "Your Name, Coauthor, Advisor",
-      link: "#",
+        "Practical Analysis of Macromolecule Identity from Cryo-ET Images Using Deep Learning",
+      venue: "Applied Imagery Pattern Recognition Workshop · 2021",
+      authors: "Mostofa Rafid Uddin, Ajmain Yasar Ahmed, Kafi Khan, Md Shahrar Fatemi, Xiangrui Zeng, Min Xu",
+      link: "https://ieeexplore.ieee.org/document/9762209",
     },
   ];
 
@@ -98,18 +116,41 @@ function PortfolioSite() {
     {
       org: "Stony Brook University",
       role: "PhD Researcher",
-      period: "2024 — Present",
+      period: "January, 2024 — Present",
       bullets: [
-        "Researching wearable-based strength training analytics (IMU, forecasting, anomaly detection).",
-        "Built real-time web app for rep detection & prediction using a foundation time-series model.",
+        "My primary research focuses on Automatic Medical Coding. Although this task remains highly challenging, significant opportunities exist to reduce the gap between AI-driven systems and traditional manual coding practices. Our work emphasizes the development of a human-in-the-loop framework designed to alleviate the workload and improve the efficiency of professional medical coders.",
       ],
     },
     {
-      org: "Company / Lab",
-      role: "Position",
-      period: "2022 — 2024",
+      org: "BRAC University, Dhaka, Bangladesh",
+      role: "Lecturer (on Study Leave)",
+      period: "June, 2022 — July, 2023",
       bullets: [
-        "Brief highlights of impactful work (metrics, users, publications).",
+        "Algorithms, Discrete Mathematics",
+      ],
+    },
+    {
+      org: "Bangladesh University of Engineering & Technology (BUET), Dhaka, Bangladesh",
+      role: "Adjunct Lecturer",
+      period: "November, 2022 — April, 2023",
+      bullets: [
+        "Data Communication, Structured Programming Language (Sessional), Data Structures & Algorithms (Sessional)",
+      ],
+    },
+    {
+      org: "Xulab at CMU",
+      role: "Remote Research Intern (Voluntary)",
+      period: "June, 2021 — December, 2022",
+      bullets: [
+        "Particle picking in Cryo-ET images using supervised and semi-supervised methods.",
+      ],
+    },
+    {
+      org: "Celloscope BD, Dhaka, Bangladesh",
+      role: "Research Engineer",
+      period: "December, 2021 — May, 2022",
+      bullets: [
+        "Speech diarization and speaker identiﬁcation models.",
       ],
     },
   ];
@@ -185,29 +226,33 @@ function PortfolioSite() {
             <a href={`mailto:${PROFILE.email}`} className="rounded-full border px-3 py-1 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800"><Mail className="mr-2 inline h-4 w-4"/>Contact</a>
           </div>
           <div className="mt-6 flex flex-wrap gap-2">
-            {PROFILE.skills.map((s) => (<Chip key={s}>{s}</Chip>))}
+            <b> Areas of Interest </b>
+            {PROFILE.interests.map((s) => (<Chip key={s}>{s}</Chip>))}
           </div>
         </motion.div>
       </section>
 
       {/* Projects */}
       <section id="projects" className="mx-auto max-w-5xl px-4 py-8">
-        <SectionTitle icon={Briefcase} title="Projects" subtitle="Selected work" />
+        <SectionTitle icon={Briefcase} title="Research Projects" subtitle="Selected work" />
         <div className="grid gap-5 sm:grid-cols-2">
-          {PROJECTS.map((p) => (
+          {RESEARCH_PROJECTS.map((p) => (
             <Card key={p.title}>
               <h3 className="text-base font-semibold">{p.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{p.description}</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {p.tags.map((t) => (<Chip key={t}>{t}</Chip>))}
               </div>
-              <a href={p.link} className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:underline">
+              {/* <a href={p.link} className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:underline">
                 View project <ArrowRight className="ml-1 h-4 w-4"/>
-              </a>
+              </a> */}
             </Card>
           ))}
         </div>
       </section>
+      
+      
+
 
       {/* Publications */}
       <section id="publications" className="mx-auto max-w-5xl px-4 py-8">
@@ -256,15 +301,43 @@ function PortfolioSite() {
         <SectionTitle icon={Award} title="Highlights" subtitle="Awards · Media · Teaching" />
         <div className="grid gap-5 sm:grid-cols-2">
           <Card>
-            <h3 className="text-base font-semibold">Best Paper Award</h3>
-            <p className="mt-2 text-sm text-muted-foreground">Conference 2024</p>
+            <h3 className="text-base font-semibold"><a href="https://www.computer.org/volunteering/awards/scholarships/upe-student-award/upe-winners" target="new">Upsilon Pi Epsilon Award 2021</a></h3>
+            <p className="mt-2 text-sm text-muted-foreground">Global Honor</p>
           </Card>
           <Card>
-            <h3 className="text-base font-semibold">Teaching Assistant</h3>
-            <p className="mt-2 text-sm text-muted-foreground">CSE 5xx · NLP · 2025</p>
+            <h3 className="text-base font-semibold">Huawei BCC ICT Competition</h3>
+            <p className="mt-2 text-sm text-muted-foreground">Certification for passing RS12-221 'HCIA Routing and Switching' Examination online. - 2021</p>
+          </Card>
+          <Card>
+            <h3 className="text-base font-semibold">Dean's List Award, <a href="https://www.buet.ac.bd/web/" target="new">BUET, Dhaka</a></h3>
+            <p className="mt-2 text-sm text-muted-foreground">Award and Technical scholarships in each of the academic semesters.</p>
+          </Card>
+          <Card>
+            <h3 className="text-base font-semibold">University Merit List, <a href="https://www.buet.ac.bd/web/" target="new">BUET, Dhaka</a></h3>
+            <p className="mt-2 text-sm text-muted-foreground">Ranked among the top 10% in each of the academic semesters.</p>
           </Card>
         </div>
       </section>
+      
+      {/* SW Projects */}
+      {/* <section id="projects" className="mx-auto max-w-5xl px-4 py-8">
+        <SectionTitle icon={Briefcase} title="Software Projects" subtitle="Selected work" />
+        <div className="grid gap-5 sm:grid-cols-2">
+          {SOFTWARE_PROJECTS.map((p) => (
+            <Card key={p.title}>
+              <h3 className="text-base font-semibold">{p.title}</h3>
+              <p className="mt-2 text-sm text-muted-foreground">{p.description}</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {p.tags.map((t) => (<Chip key={t}>{t}</Chip>))}
+              </div>
+              <a href={p.link} className="mt-4 inline-flex items-center text-sm font-medium text-blue-600 hover:underline">
+                View project <ArrowRight className="ml-1 h-4 w-4"/>
+              </a>
+            </Card>
+          ))}
+        </div>
+      </section> */}
+
 
       {/* Contact */}
       <section id="contact" className="mx-auto max-w-5xl px-4 py-8">
