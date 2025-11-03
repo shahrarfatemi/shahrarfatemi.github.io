@@ -47,7 +47,7 @@ function PortfolioSite() {
       github: "https://github.com/shahrarfatemi/",
       linkedin: "https://www.linkedin.com/in/md-shahrar-fatemi-9b7977141/",
       website: "https://shahrarfatemi.github.io/",
-      cv: "https://drive.google.com/file/d/10symMYBbm6CXs03z_rn_ql0KENRSWdCL/view?usp=sharing", // link to a hosted PDF resume/CV
+      cv: "https://drive.google.com/file/d/1N90k3ZwUnaOUcUUJInsAaxxiEfp5s1hp/view?usp=sharing", // link to a hosted PDF resume/CV
     },
     interests: [
       "Medical AI",
