@@ -228,7 +228,7 @@ function PortfolioSite() {
           <img
             src="./head_shot.jpg"
             alt="Md Shahrar Fatemi headshot"
-            className="h-32 w-32 rounded-full object-cover ring-2 ring-black/5 shadow-sm dark:ring-white/10 sm:h-36 sm:w-36"
+            className="h-40 w-40 rounded-full object-cover ring-2 ring-black/5 shadow-sm dark:ring-white/10 sm:h-36 sm:w-36"
           />
           <div>
             <div className="mb-6 text-sm text-muted-foreground">{PROFILE.location}</div>
