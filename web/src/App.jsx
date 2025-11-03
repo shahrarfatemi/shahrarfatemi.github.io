@@ -95,7 +95,13 @@ function PortfolioSite() {
   ];
 
   const PUBLICATIONS = [
-    
+    {
+      title:
+        " Concept-Enhanced Automatic ICD Coding using Large Language Models",
+      venue: "ML4H - 2025",
+      authors: "Md Shahrar Fatemi, Zhan Shi, Joel Saltz, Klaus Mueller, Tengfei Ma",
+      link: "",
+    },
     {
       title:
         "Shonglap: A Large Bengali Open-Domain Dialogue Corpus",
