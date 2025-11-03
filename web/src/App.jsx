@@ -231,12 +231,7 @@ function PortfolioSite() {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-start gap-6 sm:flex-row-reverse sm:items-center"
           >
-          <img
-            src="./head_shot.jpg"
-            alt="Md Shahrar Fatemi headshot"
-            className="h-40 w-40 rounded-full object-cover ring-2 ring-black/5 shadow-sm dark:ring-white/10 sm:h-36 sm:w-36"
-          />
-          <div>
+          <div className="flex-1 min-w-0>
             <div className="mb-6 text-sm text-muted-foreground">{PROFILE.location}</div>
             <h1 className="mb-2 text-3xl font-semibold tracking-tight sm:text-4xl">{PROFILE.name}</h1>
             <p className="mb-4 text-lg text-muted-foreground">{PROFILE.role}</p>
@@ -256,6 +251,11 @@ function PortfolioSite() {
               {PROFILE.interests.map((s) => (<Chip key={s}>{s}</Chip>))}
             </div>
           </div>
+          <img
+            src="./head_shot.jpg"
+            alt="Md Shahrar Fatemi headshot"
+            className="ml-auto h-40 w-40 rounded-full object-cover ring-2 ring-black/5 shadow-sm dark:ring-white/10 sm:h-44 sm:w-44"
+          />
         </motion.div>
       </section>
 
