@@ -211,6 +211,15 @@ function PortfolioSite() {
       {/* Hero */}
       <section id="home" className="mx-auto max-w-5xl px-4 py-14">
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+          <motion.img
+            src="https://drive.google.com/file/d/1DhehkL_g07xJUXW_6CZ-PeJoOZ7xEZyz/view?usp=sharing"
+            alt="Md Shahrar Fatemi headshot"
+            initial={{ opacity: 0, scale: 0.98, y: 6 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-6 h-28 w-28 rounded-full object-cover ring-2 ring-black/5 shadow-sm dark:ring-white/10 sm:h-32 sm:w-32"
+          />
+
           <div className="mb-6 text-sm text-muted-foreground">{PROFILE.location}</div>
           <h1 className="mb-2 text-3xl font-semibold tracking-tight sm:text-4xl">{PROFILE.name}</h1>
           <p className="mb-4 text-lg text-muted-foreground">{PROFILE.role}</p>
