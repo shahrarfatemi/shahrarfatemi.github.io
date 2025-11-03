@@ -210,7 +210,7 @@ function PortfolioSite() {
 
       {/* Hero */}
       <section id="home" className="mx-auto max-w-5xl px-4 py-14">
-        <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+        {/* <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <motion.img
             src="https://drive.google.com/file/d/1DhehkL_g07xJUXW_6CZ-PeJoOZ7xEZyz/view?usp=sharing"
             alt="Md Shahrar Fatemi headshot"
@@ -218,25 +218,37 @@ function PortfolioSite() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="mb-6 h-28 w-28 rounded-full object-cover ring-2 ring-black/5 shadow-sm dark:ring-white/10 sm:h-32 sm:w-32"
+          /> */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col items-start gap-6 sm:flex-row-reverse sm:items-center"
+          >
+          <img
+            src="./head_shot.jpg"
+            alt="Md Shahrar Fatemi headshot"
+            className="h-32 w-32 rounded-full object-cover ring-2 ring-black/5 shadow-sm dark:ring-white/10 sm:h-36 sm:w-36"
           />
-
-          <div className="mb-6 text-sm text-muted-foreground">{PROFILE.location}</div>
-          <h1 className="mb-2 text-3xl font-semibold tracking-tight sm:text-4xl">{PROFILE.name}</h1>
-          <p className="mb-4 text-lg text-muted-foreground">{PROFILE.role}</p>
-          <p className="max-w-2xl text-balance leading-relaxed text-zinc-700 dark:text-zinc-300">
-            {PROFILE.bio}
-          </p>
-          <div className="mt-6 flex flex-wrap items-center gap-2">
-            <a href={PROFILE.links.github} className="rounded-full border px-3 py-1 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800"><Github className="mr-2 inline h-4 w-4"/>GitHub</a>
-            <a href={PROFILE.links.linkedin} className="rounded-full border px-3 py-1 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800"><Linkedin className="mr-2 inline h-4 w-4"/>LinkedIn</a>
-            {PROFILE.links.website && (
-              <a href={PROFILE.links.website} className="rounded-full border px-3 py-1 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800"><Globe className="mr-2 inline h-4 w-4"/>Website</a>
-            )}
-            <a href={`mailto:${PROFILE.email}`} className="rounded-full border px-3 py-1 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800"><Mail className="mr-2 inline h-4 w-4"/>Contact</a>
-          </div>
-          <div className="mt-6 flex flex-wrap gap-2">
-            <b> Areas of Interest </b>
-            {PROFILE.interests.map((s) => (<Chip key={s}>{s}</Chip>))}
+          <div>
+            <div className="mb-6 text-sm text-muted-foreground">{PROFILE.location}</div>
+            <h1 className="mb-2 text-3xl font-semibold tracking-tight sm:text-4xl">{PROFILE.name}</h1>
+            <p className="mb-4 text-lg text-muted-foreground">{PROFILE.role}</p>
+            <p className="max-w-2xl text-balance leading-relaxed text-zinc-700 dark:text-zinc-300">
+              {PROFILE.bio}
+            </p>
+            <div className="mt-6 flex flex-wrap items-center gap-2">
+              <a href={PROFILE.links.github} className="rounded-full border px-3 py-1 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800"><Github className="mr-2 inline h-4 w-4"/>GitHub</a>
+              <a href={PROFILE.links.linkedin} className="rounded-full border px-3 py-1 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800"><Linkedin className="mr-2 inline h-4 w-4"/>LinkedIn</a>
+              {PROFILE.links.website && (
+                <a href={PROFILE.links.website} className="rounded-full border px-3 py-1 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800"><Globe className="mr-2 inline h-4 w-4"/>Website</a>
+              )}
+              <a href={`mailto:${PROFILE.email}`} className="rounded-full border px-3 py-1 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800"><Mail className="mr-2 inline h-4 w-4"/>Contact</a>
+            </div>
+            <div className="mt-6 flex flex-wrap gap-2">
+              <b> Areas of Interest </b>
+              {PROFILE.interests.map((s) => (<Chip key={s}>{s}</Chip>))}
+            </div>
           </div>
         </motion.div>
       </section>
