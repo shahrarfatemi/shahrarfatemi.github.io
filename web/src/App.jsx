@@ -231,7 +231,7 @@ function PortfolioSite() {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-start gap-6 sm:flex-row-reverse sm:items-center"
           >
-          <div className="flex-1 min-w-0>
+          <div className="flex-1 min-w-0">
             <div className="mb-6 text-sm text-muted-foreground">{PROFILE.location}</div>
             <h1 className="mb-2 text-3xl font-semibold tracking-tight sm:text-4xl">{PROFILE.name}</h1>
             <p className="mb-4 text-lg text-muted-foreground">{PROFILE.role}</p>
