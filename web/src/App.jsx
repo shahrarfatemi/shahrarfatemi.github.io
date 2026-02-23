@@ -39,7 +39,7 @@ function PortfolioSite() {
   // Editable profile info
   const PROFILE = {
     name: "Md Shahrar Fatemi",
-    role: "PhD Student · Stony Brook University",
+    role: "PhD Candidate · Stony Brook University",
     location: "New York, USA",
     bio: "I am a PhD student working on automatic medical coding, focusing on bridging the gap between AI-driven and manual methods through a human-in-the-loop framework. I am also open to research collaborations and internship opportunities.",
     email: "mfatemi[at]cs[dot]stonybrook[dot]edu",
@@ -53,8 +53,7 @@ function PortfolioSite() {
       "Medical AI",
       "NLP",
       "Machine Learning",
-      "RAG",
-      "Knowledge Graphs"
+      "RAG"
     ],
   };
 
