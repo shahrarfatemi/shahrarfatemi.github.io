@@ -96,10 +96,17 @@ function PortfolioSite() {
   const PUBLICATIONS = [
     {
       title:
-        " Concept-Enhanced Automatic ICD Coding using Large Language Models",
+        "Guided Permutation Scoring (GPS) : Option-Order Permutation for Multiple-Choice Question Answering",
+      venue: "EMNLP Findings - 2026",
+      authors: "Md Shahrar Fatemi, Zhan Shi, Klaus Mueller, Tengfei Ma",
+      link: "https://openreview.net/pdf?id=UQm1LQr8K1",
+    },
+    {
+      title:
+        "Concept-Enhanced Automatic ICD Coding using Large Language Models",
       venue: "ML4H - 2025",
       authors: "Md Shahrar Fatemi, Zhan Shi, Joel Saltz, Klaus Mueller, Tengfei Ma",
-      link: "",
+      link: "https://openreview.net/pdf/f0bf3dfbf10f2b71be5d416d2f0191e5b98aee63.pdf",
     },
     {
       title:
