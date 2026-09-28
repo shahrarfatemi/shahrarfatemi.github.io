@@ -47,7 +47,7 @@ function PortfolioSite() {
       github: "https://github.com/shahrarfatemi/",
       linkedin: "https://www.linkedin.com/in/md-shahrar-fatemi-9b7977141/",
       website: "https://shahrarfatemi.github.io/",
-      cv: "https://drive.google.com/file/d/1GWdvn1Pk4iINoL5NrDIeQNEsSwrQZi1r/view?usp=sharing", // link to a hosted PDF resume/CV
+      cv: "https://drive.google.com/file/d/1vzGmZqeLx_7sy3oxVBoswP5slBjKgeM-/view?usp=sharing", // link to a hosted PDF resume/CV
     },
     interests: [
       "Medical AI",
@@ -81,13 +81,6 @@ function PortfolioSite() {
       description:
         "Developed a novel framework for automatic ICD coding by integrating concept-level predictions with hierarchical ICD code structures. Leveraged Large Language Models (LLMs) to generate and utilize medical concept sets for enhanced interpretability and accuracy.",
       tags: ["Retrieval", "Concept Bottleneck Models", "LLMs", "Longformer", "In Context Learning"],
-      link: "#",
-    },
-    {
-      title: "LiftSafe: Wearable-based Failure Detection",
-      description:
-        "Real-time IMU-based coaching system predicting rep failure and providing actionable feedback.",
-      tags: ["IMU", "Forecasting", "React", "Python"],
       link: "#",
     },
     
@@ -212,9 +205,9 @@ function PortfolioSite() {
             {PROFILE.name}
           </a>
           <nav className="flex items-center gap-3 text-sm">
-            <a className="hover:underline" href="#projects">Projects</a>
-            <a className="hover:underline" href="#publications">Publications</a>
             <a className="hover:underline" href="#experience">Experience</a>
+            <a className="hover:underline" href="#publications">Publications</a>
+            <a className="hover:underline" href="#projects">Projects</a>
             <a className="hover:underline" href="#contact">Contact</a>
             {PROFILE.links.cv !== "#" && (
               <a
