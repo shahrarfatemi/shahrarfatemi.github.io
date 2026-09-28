@@ -63,14 +63,14 @@ function PortfolioSite() {
       description:
         "Developed a novel framework for automatic ICD coding by integrating concept-level predictions with hierarchical ICD code structures. Leveraged Large Language Models (LLMs) to generate and utilize medical concept sets for enhanced interpretability and accuracy.",
       tags: ["Retrieval", "Concept Bottleneck Models", "LLMs", "Longformer", "In Context Learning"],
-      link: "#",
+      link: "https://github.com/shahrarfatemi/CEC",
     },
     {
-      title: "Causal Discovery from unified Knowledge Graphs",
+      title: "Uncertainty Estimation of LLMs in Multi-Class Classification Tasks",
       description:
         "A framework that integrates multiple knowledge graphs into a unified representation and applies causal inference techniques to uncover cause–effect relationships among entities.",
-      tags: ["Prompt Engineering", "LLM Agents", "Causal Discovery"],
-      link: "#",
+      tags: ["PyTorch", "LLM", "Activation Engineering", "Mechanistic Interpretability"],
+      link: "https://github.com/shahrarfatemi/gps",
     },
     
   ];
@@ -127,15 +127,24 @@ function PortfolioSite() {
   const EXPERIENCE = [
     {
       org: "Stony Brook University",
-      role: "PhD Researcher",
+      role: "Graduate Teaching Assistant",
       period: "January, 2024 — Present",
       bullets: [
         "My primary research focuses on Automatic Medical Coding. Although this task remains highly challenging, significant opportunities exist to reduce the gap between AI-driven systems and traditional manual coding practices. Our work emphasizes the development of a human-in-the-loop framework designed to alleviate the workload and improve the efficiency of professional medical coders.",
       ],
     },
     {
+      org: "Olli Health, USA",
+      role: "ML Engineer Intern",
+      period: "June, 2026 — August, 2026",
+      bullets: [
+        "Built AI error-analysis tool on production data; re-oriented LLM decision system to raise specificity and sensitivity for ICD-10 code prediction, materially increasing true-positive rate at prod scale.",
+        "Designed complex decision-tree structures to enhance LLM agents’ decision-making strategy.",
+      ],
+    },
+    {
       org: "BRAC University, Dhaka, Bangladesh",
-      role: "Lecturer (on Study Leave)",
+      role: "Lecturer",
       period: "June, 2022 — July, 2023",
       bullets: [
         "Algorithms, Discrete Mathematics",
