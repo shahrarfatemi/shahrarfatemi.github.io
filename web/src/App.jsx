@@ -41,7 +41,7 @@ function PortfolioSite() {
     name: "Md Shahrar Fatemi",
     role: "PhD Candidate · Stony Brook University",
     location: "New York, USA",
-    bio: "I am a PhD student working on automatic medical coding, focusing on bridging the gap between AI-driven and manual methods through a human-in-the-loop framework. I am also open to research collaborations and internship opportunities.",
+    bio: "I am a PhD student working at the intersection of Large Language Models and Trustworthy AI, spanning LLM robustness and bias, uncertainty estimation, mechanistic interpretability, and knowledge-grounded clinical coding.",
     email: "mfatemi[at]cs[dot]stonybrook[dot]edu",
     links: {
       github: "https://github.com/shahrarfatemi/",
