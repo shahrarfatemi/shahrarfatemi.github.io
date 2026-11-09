@@ -92,7 +92,7 @@ function PortfolioSite() {
         "Guided Permutation Scoring (GPS) : Option-Order Permutation for Multiple-Choice Question Answering",
       venue: "EMNLP Findings - 2026",
       authors: "Md Shahrar Fatemi, Zhan Shi, Klaus Mueller, Tengfei Ma",
-      link: "https://openreview.net/pdf?id=UQm1LQr8K1",
+      link: "https://aclanthology.org/2026.findings-emnlp.1290.pdf",
     },
     {
       title:
